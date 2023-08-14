@@ -1,3 +1,8 @@
+for keygen:
+cmd>cd .ssh
+cmd>ssh-keygen
+cmd>copy the contents from id_rsa.pub and past it in git-project/settings/Deploykeys click on add diploykey and past the content
+
 cmd>git --version
 https://git-scm.com
 cmd>git config --list
