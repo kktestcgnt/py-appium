@@ -1,0 +1,38 @@
+1.Install appium-python-client,pytest package
+2.verify the program  and add the required chromedriver packages in below-mentioned path
+        "C:\Users\HI\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win"
+3.On chrome desktop application will show the connected mobile device.
+        chrome://inspect/#devices
+
+4.to kill the appium service which is already started(windows powershell)
+    cmd>netstat -aon | findstr 4723
+    cmd>taskkill /f /pid <processid>
+
+5.to check the connected device to pc
+    cmd>adb devices
+
+6.
+CHROMEDRIVER_VERSION=115.0.5790.170 npm install appium-chromedriver
+//appium --chromedriver-executable \path\to\C:\Users\HI\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win
+npm install appium --chromedriver_version="115.0.5790.170"
+
+7.To know the activity opened on mobile
+cmd>adb devices
+cmd>adb shell
+cmd>dumpsys window windows | grep -E 'mTopActivityComponent'
+cmd?mTopActivityComponent=com.samsung.android.dialer/.DialtactsActivity
+8.appPackage='com.teamviewer.quicksupport.market'
+appActivity='com.teamviewer.quicksupport.ui.QSActivity'
+9.uiautomaterviewer can be found in "C:\Users\HI\AppData\Local\Android\Sdk\tools\bin"
+10.Alternative of teamviewer is Airdroid which is used for screen casting
+
+
+
+important imports:
+from appium import webdriver
+from appium.webdriver.common.by import BY
+from appium.webdriver.common.appiumby import AppiumBy
+from pathlib import Path
+
+
+
