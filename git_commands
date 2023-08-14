@@ -86,3 +86,9 @@ cmd>git revert commit-id
 cmd>git push
 cmd>git revert HEAD~3
 cmd>git revert HEAD~5..HEAD`1
+
+********************
+git branch -m main master
+git fetch origin
+git branch -u origin/master master
+git remote set-head origin -a
